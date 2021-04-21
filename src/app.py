@@ -47,7 +47,7 @@ def main():
     estado = np.append(obitos_2020["uf"].unique(), "BRASIL")
 
     st.title("Análise óbitos COVID")
-    st.markdown("Este relatório analisa óbitos nos anos de 2019 até 2021")
+    st.markdown("Este relatório analisa óbitos nos anos de **2019 até 2021**")
     opcao_1 = st.sidebar.selectbox("Selecione o tipo de doença", tipo_doenca)
     opcao_2 = st.sidebar.selectbox("Selecione o estado", estado)
     figura = grafico_comparativo_por_estado(obitos_2019, obitos_2020, obitos_2021, opcao_1, opcao_2)
