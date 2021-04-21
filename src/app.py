@@ -39,9 +39,9 @@ def grafico_comparativo_por_estado(dados_2019, dados_2020, dados_2021, causa, es
     return fig
 
 def main():
-    obitos_2019 = carrega_dados("dados\obitos-2019.csv")
-    obitos_2020 = carrega_dados("dados\obitos-2020.csv")
-    obitos_2021 = carrega_dados("dados\obitos-2021.csv")
+    obitos_2019 = carrega_dados("dados/obitos-2019.csv")
+    obitos_2020 = carrega_dados("dados/obitos-2020.csv")
+    obitos_2021 = carrega_dados("dados/obitos-2021.csv")
     #figura = grafico_comparativo_por_estado(obitos_2019, obitos_2020, obitos_2021, "SRAG", "PE")
     tipo_doenca = obitos_2020["tipo_doenca"].unique()
     estado = np.append(obitos_2020["uf"].unique(), "BRASIL")
